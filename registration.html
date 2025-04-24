@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>GeoMapEd - Тіркеу</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #2b2e33;
+      padding: 1rem 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .header-content {
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .header-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .header-buttons button {
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .btn-light {
+      background-color: white;
+      color: #2b2e33;
+      font-weight: bold;
+    }
+
+    .btn-dark {
+      background-color: #4d4f53;
+      color: white;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 3rem 2rem;
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      max-width: 600px;
+    }
+
+    .left h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .left img {
+      max-width: 100%;
+    }
+
+    .right {
+      max-width: 500px;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .right h2 {
+      margin-top: 0;
+    }
+
+    .right a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group input {
+      width: 90%;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .form-group .password-toggle {
+      position: relative;
+    }
+
+    .form-group .password-toggle input {
+      padding-right: 2rem;
+    }
+
+    .form-group .password-toggle span {
+      position: absolute;
+      right: 0.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: gray;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 0.9rem;
+      background-color: #ffd36b;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div class="logo">GeoMapEd</div>
+    <div class="header-buttons">
+      <button class="btn-dark">Кіру</button>
+      <button class="btn-light">Тіркеу</button>
+    </div>
+  </div>
+</header>
+
+<div class="main">
+  <div class="left">
+    <h1>Шамнан шырақ жағылар!</h1>
+    <img src="kz.png" alt="Kazakhstan map">
+  </div>
+
+  <div class="right">
+    <h2>Тіркеу</h2>
+    <p>Аккаунт бар ма? <a href="#">Кіру</a></p>
+
+    <div class="form-group">
+      <input type="text" placeholder="Сіздің атыңыз*">
+    </div>
+
+    <div class="form-group">
+      <input type="email" placeholder="Сіздің электрондық поштаңыз*">
+    </div>
+
+    <div class="form-group">
+      <input type="password" placeholder="Құпия сөзіңіз*">
+    </div>
+
+    <div class="form-group password-toggle">
+      <input type="password" placeholder="Құпия сөзді растау*">
+    </div>
+
+    <button class="submit-btn">Тіркелу</button>
+  </div>
+</div>
+
+</body>
+</html>
